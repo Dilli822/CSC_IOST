@@ -1,4 +1,0 @@
-Supervised Learning Algorithms
-
-- Correct Answer is known
-- labelled datas

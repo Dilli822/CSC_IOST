@@ -1,0 +1,20 @@
+Supervised Learning Algorithms
+
+- Correct Answer is known
+- labelled datas input and output
+- prediction is modtly correct
+- Supervised Algorithms is mostly used in business level application 
+
+ mapping from x to y 
+input 'x'             output 'y'                        application
+email   --->          spam?                             spam filter
+audio ----->          text transcripts                  speech recognition
+english ---->         spanish/nepali                    machine translation
+ad, user info ->      click                             online ads
+image, radar info --> position of the cars              self-driving cars
+image defect          defect?                           computer vision
+
+Not only the  straight line (fitting line) but also the route line can be better 
+for housing price prediction
+a curve or straight line more relevant and closer to the datasets can be considered as 
+the desired output. i.e. regression that task is to predict the outcomes or number
