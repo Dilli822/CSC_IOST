@@ -18,3 +18,19 @@ Not only the  straight line (fitting line) but also the route line can be better
 for housing price prediction
 a curve or straight line more relevant and closer to the datasets can be considered as 
 the desired output. i.e. regression that task is to predict the outcomes or number
+Regression Algorithm gives the output number i.e. from the infinitely possible numbers.
+
+
+--- Classification Algorithm -----
+--- health - breast cancer detection as an example of classification problem
+suppose there are two types of cancer 
+1. malignant - 0
+2. benign - 1
+
+In classification we have class and category and category could have classes.
+
+we could have n number of input and n number of output in regression problem.
+
+In summary Supervised learning Algorithms
+1. Regression - predict the number, infinitely from the possible numbers
+2. Classification - predict categories, small number of possible outputs
