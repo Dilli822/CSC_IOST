@@ -1,0 +1,69 @@
+
+-- unsupervised learning Algorithm
+- although name is unsupervised it is powerful as Supervised
+- it has no labelled training data and is not Supervised, Algorithm learns without any guidance
+- examples of unsupervised learning are 
+    1. Clustering
+
+Clustering:
+  it is the process of grouping the groups into a clusters of similar features, attributes and characteristics.
+  For an example if we have 
+---------------------------------------------
+| Person            | DNA Group |
+|-------------------|-----------|
+| John Doe          | Group A   |
+| Sarah Lee         | Group C   |
+| Robert Martinez   | Group D   |
+| Samantha White    | Group E   |
+| Emily Smith       | Group A   |
+| David Brown       | Group C   |
+| Lisa Anderson     | Group D   |
+| Kevin Rodriguez   | Group E   |
+| Michael Johnson   | Group A   |
+| Jennifer Taylor   | Group C   |
+| William Garcia    | Group D   |
+| Amanda Wilson     | Group E   |
+| Jane Smith        | Group B   |
+| Alex Johnson      | Group B   |
+| Mary Brown        | Group B   |
+
+then from the above table we can cluster the persons based on the groups.
+
+- Application of unsupervised learning is at the Google News 
+for an example if I do searching as Raining Season and Rainy Countries in the world
+the the possile newsheadlines can be 
+
+"Heavy Rains Forecasted as Raining Season Approaches in Tropical Regions"
+"Top 10 Rainiest Countries: Where Rainfall Dominates Year-round"
+"Preparing for the Raining Season: Tips for Flood Prevention and Safety"
+"Climate Change Impact: How Rainy Countries Are Adapting to Extreme Weather"
+"Exploring Rainy Season Tourism: Destinations for Nature Lovers and Adventurers"
+"The Science Behind Raining Season: Understanding Weather Patterns and Forecasting"
+"Raining Season Health Risks: Addressing Waterborne Diseases and Hygiene"
+"From Drought to Deluge: Rainy Countries' Strategies for Water Management"
+"Cultural Traditions During Raining Season: Celebrations and Festivals Around the Globe"
+"Economic Impacts of Raining Season: Agriculture, Tourism, and Infrastructure Challenges"
+
+-- if we carefully study and observer the patterns in the topics of the newsheadlines then the word 
+rains, Raining, Season, rainy are mostly repeated so that indirectly means our UNSUPERVISED LEARNING Algorithm
+Cluster the similar words or similar types of news after collecting the news from the internet.
+
+--- ANOTHER COMMERICAIL EXAMPLES OF UNSUPERVISED LEARNING ---
+1. Customers analysis in a business and many more..
+
+Clustering Graph
+y
+|
+|
+|     xxxx                 ooooooo
+|    xxxxx                 ooooooo
+|     xxx                  oooooo
+|
+|
+|     CCCCCC
+|      CCCCCCCC
+|    ccccc
+|                              LLL
+|      ++++++
+|      ++++++
+|_____________________________________ x
