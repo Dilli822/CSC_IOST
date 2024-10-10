@@ -1,4 +1,14 @@
 
+/**
+1. Comments
+2. Data Types
+3. Control Flow - if else and switch case
+4. Operators - logical, comparsion, arithmetic
+5. constant keyword and for loop
+6. class, class properties and constructor
+**/
+
+
 // SINGLE LINE COMMENTS
 /**
 THIS IS MULTI-LINE COMMENTS
@@ -134,5 +144,60 @@ public class Form
         // Output the initialized values
         Console.WriteLine($"Username: {myForm.Username}");
         Console.WriteLine($"Email: {myForm.Email}");
+
+        Console.WriteLine("Enter the day number");
+        int dayNumber = int.Parse(Console.ReadLine())
+        // switch case
+        switch(dayNumber){
+            case 1:
+             Console.WriteLine("Monday");
+             break;
+            case 2:
+            Console.WriteLine("Tuesday");
+            break;
+            default:
+            Console.WriteLine("INvalid week day number");
+            break;
+        }
+    }
+}
+
+
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a number (1-7) for the day of the week:");
+        int dayNumber = int.Parse(Console.ReadLine());
+
+        switch (dayNumber)
+        {
+            case 1:
+                Console.WriteLine("Monday");
+                break;
+            case 2:
+                Console.WriteLine("Tuesday");
+                break;
+            case 3:
+                Console.WriteLine("Wednesday");
+                break;
+            case 4:
+                Console.WriteLine("Thursday");
+                break;
+            case 5:
+                Console.WriteLine("Friday");
+                break;
+            case 6:
+                Console.WriteLine("Saturday");
+                break;
+            case 7:
+                Console.WriteLine("Sunday");
+                break;
+            default:
+                Console.WriteLine("Invalid day number. Please enter a number between 1 and 7.");
+                break;
+        }
     }
 }
