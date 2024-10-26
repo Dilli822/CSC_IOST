@@ -31,3 +31,27 @@ public class Home{
 
 
 };
+
+
+
+
+
+
+using System;
+
+public class Form{
+  // 
+  public string username {get; set;}
+  public int age {get; set;}
+  
+  public Form(string username, int age){
+      this.username = username;
+      this.age = age;
+      Console.WriteLine($"Username: {this.username}, Age: {this.age} ");
+  }
+  public static void Main(){
+      Form form1 = new Form("Dilli Hang Rai", 25);
+      
+  }  
+    
+};E

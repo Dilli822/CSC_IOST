@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSC 374 Cognitive Science ~ CSIT Solution </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/merocsit/merocsit.github.io/refs/heads/main/resources/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./csc374_CognitiveScience.html">
+                    <img src="../../../../../resources/img/logos/main/csit-solutionlogo.png" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2068">2068</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2071"> 2071</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2073">2073</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">2076</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#" id="ModelSolution">ModelSolution</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2068"> Solution 2068</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2071"> Solution 2071</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2073"> Solution 2073</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2074"> Solution 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075"> Solution 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076"> Solution 2076</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+
+                                    COGNITIVE SCIENCE
+                                    An Introduction to the Science of the Mind
+                                    Second Edition
+                                    José Luis Bermúdez
+
+                                </a></li>
+
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+                                    Michael R. W. Dawson , Mind, Body, World: Foundations of Cognitive Science,
+                                    UBC Press
+
+
+
+                                </a></li>
+
+
+
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+                                    Daniel Kolak, William Hirstein, Peter Mandik, Jonathan Waskan, Cognitive Science,
+                                    An Introduction to Mind and Brain, Routledge Taylor and Francis Group
+
+
+
+
+                                </a></li>
+
+
+
+                            <li><a class="dropdown-item" href="#" id="refBook4">
+                                    Amit Konar – Artificial Intelligence and Soft computing: Behavioral and Cognitive
+                                    Modeling of the Human Brain, CRC Press
+
+
+                                </a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                            <li><a class="dropdown-item" href="#" id="IPYouTubeNotes"> Notes</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 374 Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 385 New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-9 col-sm-12">
+                <div id="content" class="border p-3 rounded">
+                    <!-- Dynamic content will be displayed here -->
+                    <div class="text-center">
+                        <strong style="font-size: 24px;">Cognitive Science</strong>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Course Title:</strong> Cognitive Science</p>
+                        <p><strong>Course No:</strong> CSC374</p>
+                        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+                        <p><strong>Semester:</strong> VI</p>
+                        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                        <p><strong>Credit Hrs:</strong> 3</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Description</strong>
+                        <p>This course covers the fundamental concepts of cognitive science and brain computation.</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Objectives</strong>
+                        <p>The main objective of this course is to provide basic knowledge of the cognition process,
+                            mind theory, physical symbol systems, cognitive systems, concepts of brain mappings, and
+                            neural network structures.</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Contents</strong>
+                        <div>
+                            <strong>Unit 1: Introduction (7 Hrs.)</strong>
+                            <ul>
+                                <li>Cognition Process, Cognitive Psychology, Cognitive Science</li>
+                                <li>Foundations of Cognitive Science</li>
+                                <li>Cognitive Science and Multi-disciplinary Approaches</li>
+                                <li>Machines and Minds</li>
+                                <li>Laws of Thought to Binary Logic</li>
+                                <li>Classical Cognitive Science</li>
+                                <li>Connectionist Cognitive Science</li>
+                                <li>Mind-Body Problem</li>
+                                <li>Turing's Response to the Mind-Body Problem</li>
+                                <li>Pinker, Penrose, and Searle's Responses to the Mind-Body Problem</li>
+                                <li>Representational Theory of Mind</li>
+                                <li>Theories of Mental Representation: Minimal Analysis, Resemblance Theories, Casual
+                                    Covariation Theories, Internal Role Theories of Mental Representation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 2: Precursors of Cognitive Science (5 Hrs.)</strong>
+                            <ul>
+                                <li>Behaviorism</li>
+                                <li>Theory of Computation and Algorithms</li>
+                                <li>Algorithms and Turing Machines</li>
+                                <li>Marr's Three Levels of Computation</li>
+                                <li>Linguistics and Formal Language</li>
+                                <li>Information Processing Models in Psychology</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 3: Psychological Perspective of Cognition (5 Hrs.)</strong>
+                            <ul>
+                                <li>Cognitive Models of Memory: Atkinson-Shiffrin Model, Tulving’s Model</li>
+                                <li>Mental Imagery: Kosslyn's View, Moyer's View, Peterson's View</li>
+                                <li>Cognitive Maps and Problem Understanding</li>
+                                <li>States of Cognition</li>
+                                <li>Cognition in AI</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 4: Physical Symbol System and Language of Thought (7 Hrs.)</strong>
+                            <ul>
+                                <li>Physical Symbol System Hypothesis</li>
+                                <li>Symbols and Symbol Systems</li>
+                                <li>Problem Solving by Symbol Structure</li>
+                                <li>From Physical Symbol Systems to the Language of Thought</li>
+                                <li>The Computer Model of the Mind</li>
+                                <li>Syntax and the Language of Thought</li>
+                                <li>Fodor’s Argument for the Language of Thought Hypothesis</li>
+                                <li>The Chinese Room Argument and Turing Test</li>
+                                <li>The Symbol Ground Problem</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 5: Cognitive Systems (4 Hrs.)</strong>
+                            <ul>
+                                <li>Cognitive System Overview</li>
+                                <li>Architecture for Intelligent Agents</li>
+                                <li>Modularity of the Mind</li>
+                                <li>Modularity Hypothesis</li>
+                                <li>The ACT-R/PM Architecture</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 6: Brain Mapping (6 Hrs.)</strong>
+                            <ul>
+                                <li>Structure and Function in the Brain</li>
+                                <li>Anatomical Connectivity</li>
+                                <li>Cognitive Functioning Techniques from Neuroscience</li>
+                                <li>Mapping the Brain's Electrical Activity: EEG and MEG</li>
+                                <li>Mapping the Brain's Blood Flow and Oxygen Levels: PET and fMRI</li>
+                                <li>Attention and Visuospatial Attention</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 7: Mind Reading (5 Hrs.)</strong>
+                            <ul>
+                                <li>Metarepresentation</li>
+                                <li>Metarepresentation, Autism, and Theory of Mind</li>
+                                <li>Mind Reading System</li>
+                                <li>Understanding False Belief</li>
+                                <li>Mind Reading as Simulation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 8: Neural Networks and Distributed Information Processing (6 Hrs.)</strong>
+                            <ul>
+                                <li>Neurally Inspired Models of Information Processing</li>
+                                <li>Single-Layer Networks and Boolean Functions</li>
+                                <li>Multilayer Networks</li>
+                                <li>Information Processing in Neural Networks</li>
+                                <li>Language Learning in Neural Networks</li>
+                                <li>Neural Network Models of Children's Physical Reasoning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Laboratory Works</strong>
+                        <p>Laboratory work includes implementing and simulating the concepts of the cognition process,
+                            intelligent agents, and neural networks. Additionally, students can extend laboratory work
+                            by using tools like PSY Toolkit or PsyNeuLink.</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Text Books / Reference Books</strong>
+                        <ul>
+                            <li>José Luis Bermúdez, "Cognitive Science: An Introduction to the Science of the Mind",
+                                Cambridge University Press</li>
+                            <li>Michael R. W. Dawson, "Mind, Body, World: Foundations of Cognitive Science", UBC Press
+                            </li>
+                            <li>Daniel Kolak, William Hirstein, Peter Mandik, Jonathan Waskan, "Cognitive Science: An
+                                Introduction to Mind and Brain", Routledge Taylor and Francis Group</li>
+                            <li>Amit Konar, "Artificial Intelligence and Soft Computing: Behavioral and Cognitive
+                                Modeling of the Human Brain", CRC Press</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <br>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a
+                href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+
+
+
+            pastYearSolution: `<h2 class="text-left"> Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            ModelSolution: `
+<h5>Model Solution </h5>
+<hr />
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+            pastYearSolution2068: `
+<h5>Solution 2068 OLD SYLLBAUS CSC 363</h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            pastYearSolution2071: `
+<h5>Solution 2071 OLD SYLLBAUS CSC 363</h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            pastYearSolution2073: `
+<h5>Solution 2073 OLD SYLLBAUS CSC 363</h5>
+<hr />
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            pastYearSolution2074: `
+<h5>Solution 2074 OLD SYLLBAUS CSC 363</h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            pastYearSolution2075: `
+<h5>Solution 2075 OLD SYLLBAUS CSC 363</h5>
+<hr />
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+
+
+
+`,
+            pastYearSolution2076: `
+<h5>Solution 2076 OLD SYLLBAUS CSC 321 </h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            questions: `<h2 class="text-left">  Subject Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            pastYearQuestion2068: `
+
+                <h2> Not Available </h2>
+
+            `,
+
+            pastYearQuestion2073: `
+                            <h2> Not Available </h2>
+`,
+            pastYearQuestion2074: `
+                            <h2> Not Available </h2>
+`,
+
+            pastYearQuestion2075: `                  <h2> Not Available </h2> `,
+
+            pastYearQuestion2076: ` 
+                <h2> Not Available </h2>
+
+
+        `,
+
+            pastYearQuestion2080: `
+                         <h2> Not Available </h2>
+        `,
+
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+
+            refBook1: `
+<h5>COGNITIVE SCIENCE
+An Introduction to the Science of the Mind
+Third edition
+José Luis Bermúdez, Texas A&M University </h5>
+<hr>
+   <iframe src="./RefBooks/Bermudez J.L.-Cognitive Science_ An Introduction to the Science of the Mind-CUP (2014).pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="./RefBooks/Bermudez J.L.-Cognitive Science_ An Introduction to the Science of the Mind-CUP (2014).pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class=" nav-link" 
+href="./RefBooks/Bermudez J.L.-Cognitive Science_ An Introduction to the Science of the Mind-CUP (2014).pdf”, Pearson Edition, Latest Edition.-compressed final.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+
+</div>
+
+`,
+
+            refBook2: `
+
+<h5>  Michael R. W. Dawson , Mind, Body, World: Foundations of Cognitive Science, 
+UBC Press </h5>
+<hr>
+   <iframe src="" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="”, Pearson Edition, Latest Edition.-compressed final.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class=" nav-link" 
+href="”, Pearson Edition, Latest Edition.-compressed final.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+
+</div>
+
+
+`,
+
+            refBook3: `
+
+<h5>  Daniel Kolak, William Hirstein, Peter Mandik, Jonathan Waskan, Cognitive Science, 
+An Introduction to Mind and Brain, Routledge Taylor and Francis Group </h5>
+<hr>
+   <iframe src="" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    
+<p>Sorry! PDF cannot be displayed. Please Use google books it is avaiable there!
+
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" href="" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class=" nav-link" href="" download>
+Download Reference Book
+</a>
+</button>
+
+</div>
+
+
+`,
+
+
+            refBook4: `
+
+<h5>  Amit Konar – Artificial Intelligence and Soft computing: Behavioral and Cognitive 
+Modeling of the Human Brain, CRC Press </h5>
+<hr>
+   <iframe src="./RefBooks/Artificial Intelligence and Soft Computing  Behavioral and Cognitive Modeling of the Human Brain - Konar Amit.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="./RefBooks/Artificial Intelligence and Soft Computing  Behavioral and Cognitive Modeling of the Human Brain - Konar Amit.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class=" nav-link" href="./RefBooks/Artificial Intelligence and Soft Computing  Behavioral and Cognitive Modeling of the Human Brain - Konar Amit.pdf" download>
+Download Reference Book
+</a>
+</button>
+
+</div>
+
+
+`,
+
+
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+
+           <div class="text-center">
+    <strong style="font-size: 24px;">Cognitive Science</strong>
+</div>
+<div class="mt-4">
+    <p><strong>Course Title:</strong> Cognitive Science</p>
+    <p><strong>Course No:</strong> CSC374</p>
+    <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+    <p><strong>Semester:</strong> VI</p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Credit Hrs:</strong> 3</p>
+</div>
+<div class="mt-4">
+    <strong>Course Description</strong>
+    <p>This course covers the fundamental concepts of cognitive science and brain computation.</p>
+</div>
+<div class="mt-4">
+    <strong>Course Objectives</strong>
+    <p>The main objective of this course is to provide basic knowledge of the cognition process, mind theory, physical symbol systems, cognitive systems, concepts of brain mappings, and neural network structures.</p>
+</div>
+<div class="mt-4">
+    <strong>Course Contents</strong>
+    <div>
+        <strong>Unit 1: Introduction (7 Hrs.)</strong>
+        <ul>
+            <li>Cognition Process, Cognitive Psychology, Cognitive Science</li>
+            <li>Foundations of Cognitive Science</li>
+            <li>Cognitive Science and Multi-disciplinary Approaches</li>
+            <li>Machines and Minds</li>
+            <li>Laws of Thought to Binary Logic</li>
+            <li>Classical Cognitive Science</li>
+            <li>Connectionist Cognitive Science</li>
+            <li>Mind-Body Problem</li>
+            <li>Turing's Response to the Mind-Body Problem</li>
+            <li>Pinker, Penrose, and Searle's Responses to the Mind-Body Problem</li>
+            <li>Representational Theory of Mind</li>
+            <li>Theories of Mental Representation: Minimal Analysis, Resemblance Theories, Casual Covariation Theories, Internal Role Theories of Mental Representation</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 2: Precursors of Cognitive Science (5 Hrs.)</strong>
+        <ul>
+            <li>Behaviorism</li>
+            <li>Theory of Computation and Algorithms</li>
+            <li>Algorithms and Turing Machines</li>
+            <li>Marr's Three Levels of Computation</li>
+            <li>Linguistics and Formal Language</li>
+            <li>Information Processing Models in Psychology</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 3: Psychological Perspective of Cognition (5 Hrs.)</strong>
+        <ul>
+            <li>Cognitive Models of Memory: Atkinson-Shiffrin Model, Tulving’s Model</li>
+            <li>Mental Imagery: Kosslyn's View, Moyer's View, Peterson's View</li>
+            <li>Cognitive Maps and Problem Understanding</li>
+            <li>States of Cognition</li>
+            <li>Cognition in AI</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 4: Physical Symbol System and Language of Thought (7 Hrs.)</strong>
+        <ul>
+            <li>Physical Symbol System Hypothesis</li>
+            <li>Symbols and Symbol Systems</li>
+            <li>Problem Solving by Symbol Structure</li>
+            <li>From Physical Symbol Systems to the Language of Thought</li>
+            <li>The Computer Model of the Mind</li>
+            <li>Syntax and the Language of Thought</li>
+            <li>Fodor’s Argument for the Language of Thought Hypothesis</li>
+            <li>The Chinese Room Argument and Turing Test</li>
+            <li>The Symbol Ground Problem</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 5: Cognitive Systems (4 Hrs.)</strong>
+        <ul>
+            <li>Cognitive System Overview</li>
+            <li>Architecture for Intelligent Agents</li>
+            <li>Modularity of the Mind</li>
+            <li>Modularity Hypothesis</li>
+            <li>The ACT-R/PM Architecture</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 6: Brain Mapping (6 Hrs.)</strong>
+        <ul>
+            <li>Structure and Function in the Brain</li>
+            <li>Anatomical Connectivity</li>
+            <li>Cognitive Functioning Techniques from Neuroscience</li>
+            <li>Mapping the Brain's Electrical Activity: EEG and MEG</li>
+            <li>Mapping the Brain's Blood Flow and Oxygen Levels: PET and fMRI</li>
+            <li>Attention and Visuospatial Attention</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 7: Mind Reading (5 Hrs.)</strong>
+        <ul>
+            <li>Metarepresentation</li>
+            <li>Metarepresentation, Autism, and Theory of Mind</li>
+            <li>Mind Reading System</li>
+            <li>Understanding False Belief</li>
+            <li>Mind Reading as Simulation</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 8: Neural Networks and Distributed Information Processing (6 Hrs.)</strong>
+        <ul>
+            <li>Neurally Inspired Models of Information Processing</li>
+            <li>Single-Layer Networks and Boolean Functions</li>
+            <li>Multilayer Networks</li>
+            <li>Information Processing in Neural Networks</li>
+            <li>Language Learning in Neural Networks</li>
+            <li>Neural Network Models of Children's Physical Reasoning</li>
+        </ul>
+    </div>
+</div>
+<div class="mt-4">
+    <strong>Laboratory Works</strong>
+    <p>Laboratory work includes implementing and simulating the concepts of the cognition process, intelligent agents, and neural networks. Additionally, students can extend laboratory work by using tools like PSY Toolkit or PsyNeuLink.</p>
+</div>
+<div class="mt-4">
+    <strong>Text Books / Reference Books</strong>
+    <ul>
+        <li>José Luis Bermúdez, "Cognitive Science: An Introduction to the Science of the Mind", Cambridge University Press</li>
+        <li>Michael R. W. Dawson, "Mind, Body, World: Foundations of Cognitive Science", UBC Press</li>
+        <li>Daniel Kolak, William Hirstein, Peter Mandik, Jonathan Waskan, "Cognitive Science: An Introduction to Mind and Brain", Routledge Taylor and Francis Group</li>
+        <li>Amit Konar, "Artificial Intelligence and Soft Computing: Behavioral and Cognitive Modeling of the Human Brain", CRC Press</li>
+    </ul>
+</div>
+
+
+                  `,
+            newSyllabus: `
+            <div class="text-center">
+        <strong style="font-size: 24px;">Cognitive Science</strong>
+    </div>
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Cognitive Science</p>
+        <p><strong>Course No:</strong> CSC385</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> VI</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>This course covers the fundamental concepts of cognitive science and brain computation.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Objectives</strong>
+        <p>The main objective of this course is to provide basic knowledge of web cognition process, mind theory, physical symbol systems, cognitive systems, concepts of brain mappings, and neural network structures.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Contents</strong>
+        <div>
+            <strong>Unit 1: Introduction (7 Hrs.)</strong>
+            <ul>
+                <li>Cognition Process, Cognitive Psychology, Cognitive Science</li>
+                <li>Foundations of Cognitive Science</li>
+                <li>Cognitive Science and Multi-disciplinary</li>
+                <li>Machines and Minds</li>
+                <li>Laws of Thought to Binary Logic</li>
+                <li>Classical Cognitive Science</li>
+                <li>Connectionist Cognitive Science</li>
+                <li>Mind-Body Problem</li>
+                <li>Turing's Response to the Mind-Body Problem</li>
+                <li>Pinker, Penrose, and Searle's Responses to the Mind-Body Problem</li>
+                <li>Representational Theory of Mind</li>
+                <li>Theories of Mental Representation: Minimal Analysis, Resemblance Theories, Casual Covariation Theories, Internal Role Theories of Mental Representation</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 2: Precursors of Cognitive Science (5 Hrs.)</strong>
+            <ul>
+                <li>Behaviorism</li>
+                <li>Theory of Computation and Algorithms</li>
+                <li>Algorithms and Turing Machines</li>
+                <li>Marr's Three Levels of Computation</li>
+                <li>Linguistics and Formal Language</li>
+                <li>Information Processing Models in Psychology</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 3: Psychological Perspective of Cognition (5 Hrs.)</strong>
+            <ul>
+                <li>Cognitive Models of Memory: Atkinson-Shiffrin Model, Tulving’s Model</li>
+                <li>Mental Imagery: Kosslyn's View, Moyer's View, Peterson's View</li>
+                <li>Cognitive Maps and Problem Understanding</li>
+                <li>States of Cognition</li>
+                <li>Cognition in AI</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 4: Physical Symbol System and Language of Thought (7 Hrs.)</strong>
+            <ul>
+                <li>Physical Symbol System Hypothesis</li>
+                <li>Symbols and Symbol Systems</li>
+                <li>Problem Solving by Symbol Structure</li>
+                <li>From Physical Symbol Systems to the Language of Thought</li>
+                <li>The Computer Model of the Mind</li>
+                <li>Syntax and the Language of Thought</li>
+                <li>Fodor’s Argument for the Language of Thought Hypothesis</li>
+                <li>The Chinese Room Argument and Turing Test</li>
+                <li>The Symbol Ground Problem</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 5: Cognitive Systems (4 Hrs.)</strong>
+            <ul>
+                <li>Cognitive System Overview</li>
+                <li>Architecture for Intelligent Agents</li>
+                <li>Modularity of the Mind</li>
+                <li>Modularity Hypothesis</li>
+                <li>The ACT-R/PM Architecture</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 6: Brain Mapping (6 Hrs.)</strong>
+            <ul>
+                <li>Structure and Function in the Brain</li>
+                <li>Anatomical Connectivity</li>
+                <li>Cognitive Functioning Techniques from Neuroscience</li>
+                <li>Mapping the Brain's Electrical Activity: EEG and MEG</li>
+                <li>Mapping the Brain's Blood Flow and Oxygen Levels: PET and fMRI</li>
+                <li>Attention and Visuospatial Attention</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 7: Mind Reading (5 Hrs.)</strong>
+            <ul>
+                <li>Metarepresentation</li>
+                <li>Metarepresentation, Autism, and Theory of Mind</li>
+                <li>Mind Reading System</li>
+                <li>Understanding False Belief</li>
+                <li>Mind Reading as Simulation</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 8: Neural Networks and Distributed Information Processing (6 Hrs.)</strong>
+            <ul>
+                <li>Neurally Inspired Models of Information Processing</li>
+                <li>Single-Layer Networks and Boolean Functions</li>
+                <li>Multilayer Networks</li>
+                <li>Information Processing in Neural Networks</li>
+                <li>Language Learning in Neural Networks</li>
+                <li>Neural Network Models of Children's Physical Reasoning</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-4">
+        <strong>Laboratory Works</strong>
+        <p>The laboratory work includes implementing and simulating the concepts of the cognition process, intelligent agents, and neural networks. In addition, laboratory work can be extended to use tools like PSY Toolkit or PsyNeuLink.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Text Books / Reference Books</strong>
+        <ul>
+            <li>José Luis Bermúdez, "Cognitive Science: An Introduction to the Science of the Mind", Cambridge University Press</li>
+            <li>Michael R. W. Dawson, "Mind, Body, World: Foundations of Cognitive Science", UBC Press</li>
+            <li>Daniel Kolak, William Hirstein, Peter Mandik, Jonathan Waskan, "Cognitive Science: An Introduction to Mind and Brain", Routledge Taylor and Francis Group</li>
+            <li>Amit Konar, "Artificial Intelligence and Soft Computing: Behavioral and Cognitive Modeling of the Human Brain", CRC Press</li>
+        </ul>
+    </div>
+            
+            `,
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            notes: `<h5> Notes </h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+<button class="btn btn-outline-success mobileView">
+    <a class="nav-link" href="" target="_blank">
+    Download Solution</a>
+</button>
+
+            `,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Coming Soon!! </span> </h2>`,
+            Notes: `<h5> Notes </h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+    <a class="nav-link" href="" target="_blank">
+    Download Solution</a>
+</button>
+
+
+            `
+
+
+        };
+
+
+
+
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+
+
+        document.getElementById('refBook3').addEventListener('click', () => {
+            content.innerHTML = contents.refBook3;
+        });
+
+        document.getElementById('refBook4').addEventListener('click', () => {
+            content.innerHTML = contents.refBook4;
+        });
+
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearQuestion2071').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2071;
+        });
+        document.getElementById('pastYearQuestion2073').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2073;
+        });
+
+        document.getElementById('pastYearQuestion2068').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2068;
+        });
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('ModelSolution').addEventListener('click', () => {
+            content.innerHTML = contents.ModelSolution;
+        });
+
+
+        document.getElementById('pastYearSolution2068').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2068;
+        });
+
+        document.getElementById('pastYearSolution2071').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2071;
+        });
+
+        document.getElementById('pastYearSolution2073').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2073;
+        });
+
+        document.getElementById('pastYearSolution2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2074;
+        });
+
+
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+        document.getElementById('IPYouTubeNotes').addEventListener('click', () => {
+            content.innerHTML = contents.IPYouTubeNotes;
+        });
+
+
+
+        // Set current year in the footer
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>
