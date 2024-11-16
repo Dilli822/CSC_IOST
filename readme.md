@@ -1,10 +1,7 @@
 ### 📚 CSC IOST: Academic Resources for B.Sc. CSIT
 
-Welcome to the **CSC IOST** repository! This collection is dedicated to B.Sc. Computer Science and Information Technology (CSIT) students. Here, you'll find a wealth of academic materials, including handwritten notes, lab work, and resources designed to enhance your learning experience.
+Welcome to the **CSC IOST** repository! This collection is dedicated to B.Sc. Computer Science and Information Technology (CSIT) students. Here, I have collected a wealth of academic materials, including handwritten notes, lab work, and resources designed to enhance my learning experience.
 
-#### 🚀 Overview
-
-This repository aims to provide comprehensive support for your academic journey in computer science. Whether you're preparing for exams, completing assignments, or looking for additional resources, CSC IOST has you covered!
 
 ####  📂 Contents
 
@@ -18,15 +15,13 @@ This repository aims to provide comprehensive support for your academic journey 
   - Summaries and key points for each subject
 
 - **💻 Lab Works**
-  - Practical lab assignments
   - Code examples and project guidelines
-  - Solutions to lab exercises
 
 ####  🎯 Features
 
 - **User-Friendly Structure:** Easily navigate through topics and subjects.
 - **Regular Updates:** Continuously improved and updated with new materials.
-- **Collaborative Learning:** Feel free to contribute by adding your notes or resources!
+- **Collaborative Learning:** Feel free to contribute by adding and reviewing the notes or resources!
 
 ####  🔍 Getting Started
 

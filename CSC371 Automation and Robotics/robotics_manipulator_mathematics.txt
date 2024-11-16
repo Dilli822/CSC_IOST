@@ -1,0 +1,78 @@
+
+Forward Kinematics (FK):
+
+The goal of Forward Kinematics is to compute the position and orientation of the end-effector,
+given the joint parameters (angles for revolute joints, and displacement for prismatic joints).
+
+For a robotic arm with multiple links, we use the Denavit-Hartenberg (DH) Parameters to describe
+the kinematics. The DH convention involves four parameters for each joint:
+1. θ_i: The joint angle (for revolute joints).
+2. d_i: The offset along the previous z-axis to the common normal.
+3. a_i: The length of the common normal (distance along the x-axis).
+4. α_i: The twist angle between the previous and current z-axes.
+
+The transformation matrix for each joint i is given by:
+
+T_i = [ cos(θ_i)  -sin(θ_i) cos(α_i)   a_i cos(θ_i) ]
+      [ sin(θ_i)   cos(θ_i) cos(α_i)   a_i sin(θ_i) ]
+      [     0         sin(α_i)      cos(α_i)         d_i ]
+      [     0            0             0            1 ]
+
+Where:
+- T_i is the transformation matrix that maps the coordinates of the i-th frame to the (i+1)-th frame.
+
+To find the overall transformation from the base frame to the end-effector frame, we multiply
+the transformation matrices for each joint:
+
+T_0n = T_1 T_2 ... T_n
+
+Inverse Kinematics (IK):
+
+Inverse Kinematics is the process of determining the joint parameters (angles or displacements)
+that will achieve a desired position and orientation of the end-effector.
+
+For a 2-joint planar manipulator with joint angles θ_1 and θ_2 and link lengths L_1 and L_2,
+the forward kinematics equations are:
+
+x = L_1 cos(θ_1) + L_2 cos(θ_1 + θ_2)
+y = L_1 sin(θ_1) + L_2 sin(θ_1 + θ_2)
+
+To solve for θ_1 and θ_2, we use trigonometric identities and numerical methods like Newton-Raphson.
+
+Jacobian Matrix:
+
+The Jacobian matrix relates the velocities of the joints to the velocity of the end-effector.
+
+For a robotic arm with joint velocities θ̇_1, θ̇_2, ..., θ̇_n, the end-effector's linear velocity v is related to the joint velocities by the Jacobian matrix J(θ):
+
+v = J(θ) * θ̇
+
+Where:
+- v is the velocity vector of the end-effector.
+- θ̇ is the vector of joint velocities.
+- J(θ) is the Jacobian matrix.
+
+The Jacobian matrix is essential for control, especially when performing tasks like trajectory tracking
+or when a robot needs to adjust its motion in response to external forces.
+
+Dynamics of a Manipulator:
+
+The dynamic equations describe the forces and torques that cause motion in a manipulator.
+They are often written using Newton-Euler or Lagrangian mechanics.
+
+The dynamic equation in joint space is:
+
+M(θ) * θ̈ + C(θ, θ̇) * θ̇ + G(θ) = τ
+
+Where:
+- M(θ) is the mass (inertia) matrix.
+- C(θ, θ̇) is the Coriolis matrix (handling rotational effects between joints).
+- G(θ) is the gravity vector.
+- τ is the vector of joint torques.
+
+Control of Manipulators:
+
+The control of manipulators often uses:
+- PID controllers for position control.
+- Trajectory planning algorithms for smooth motion.
+- Model Predictive Control (MPC) for more complex tasks.
