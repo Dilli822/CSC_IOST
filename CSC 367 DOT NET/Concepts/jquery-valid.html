@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form Validation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Enter your name"><br>
+        <input type="email" id="email" placeholder="Enter your email"><br>
+        <input type="password" id="password" placeholder="Enter your password"><br>
+        <select id="role">
+            <option value="">Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select><br>
+        <button type="submit">Submit</button>
+        <p id="error" style="color: red; display: none;">All fields are required!</p>
+    </form>
+
+    <script>
+        $(document).ready(function(){
+            $("#myForm").submit(function(e){
+                let isValid = true;
+                $("input, select").each(function(){
+                    if ($(this).val().trim() === "") isValid = false;
+                });
+
+                if (!isValid) {
+                    $("#error").show();
+                    e.preventDefault();
+                } else {
+                    $("#error").hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
