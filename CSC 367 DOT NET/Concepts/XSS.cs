@@ -5,7 +5,7 @@
 <form action="Submit.aspx" method="post">
     <input type="text" name="comment" placeholder="Write a comment">
     <button type="submit">Post</button>
-</form>
+</form
 // Submit.aspx.cs (Vulnerable)
 protected void Page_Load(object sender, EventArgs e)
 {
