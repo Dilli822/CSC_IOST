@@ -31,3 +31,16 @@ class Program
         Console.WriteLine("After Delete: " + string.Join(", ", deletedNumbers));
     }
 }
+
+// LAMBDA EXPRESSION
+
+using System;
+
+class Program{
+    static void Main(){
+       Func<int, int, int> add = (x, y) => x + y;
+       int result = add(3,4);
+       Console.WriteLine(result);
+        
+    }
+}
