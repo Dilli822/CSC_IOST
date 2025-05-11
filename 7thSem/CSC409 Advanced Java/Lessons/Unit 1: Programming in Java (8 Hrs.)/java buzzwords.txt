@@ -1,0 +1,24 @@
+"Java buzzwords" are key features or principles that describe the core design goals of the Java programming language. These were popularized by Sun Microsystems to highlight what makes Java unique.
+
+🔑 Common Java Buzzwords:
+Simple – Easy to learn, especially for C/C++ developers.
+
+Object-Oriented – Everything is treated as an object, promoting modular and reusable code.
+
+Platform-Independent – "Write once, run anywhere" via the Java Virtual Machine (JVM).
+
+Secure – Strong security features like bytecode verification, sandboxing, and lack of pointers.
+
+Robust – Emphasizes early error checking, exception handling, and garbage collection.
+
+Multithreaded – Built-in support for multithreaded programming (concurrent execution).
+
+Architecture-Neutral – Compiled code is not dependent on hardware or OS architecture.
+
+Portable – Java programs can move easily from one system to another.
+
+High Performance – Though slower than native languages, it's optimized with Just-In-Time (JIT) compilation.
+
+Distributed – Designed for building distributed applications (e.g., via RMI, sockets).
+
+Dynamic – Can adapt to evolving environments and load classes at runtime.
